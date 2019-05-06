@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<c3p0-config>
+ <default-config>
+    <property name="user">root</property>
+    <property name="password">nogizaka46</property>
+    <property name="jdbcUrl">jdbc:mysql://localhost:3306/bookstore?serverTimezone=Asia/Shanghai</property>
+    <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+    <property name="acquireIncrement">2</property>
+    <property name="initialPoolSize">3</property>
+    <property name="minPoolSize">3</property>
+    <property name="maxPoolSize">15</property>
+    <property name="maxStatements">20</property> 
+    <property name="maxStatementsPerConnection">5</property>
+    </default-config>
+    
+  <named-config name="test"> 
+  	<property name="user">root</property>
+    <property name="password">nogizaka46</property>
+    <property name="jdbcUrl">jdbc:mysql://localhost:3306/booksotre?serverTimezone=GMT%2B8</property>
+    <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+    <property name="acquireIncrement">2</property>
+    <property name="initialPoolSize">5</property>
+    <property name="minPoolSize">5</property>
+    <property name="maxPoolSize">10</property>
+    <property name="maxStatements">20</property> 
+    <property name="maxStatementsPerConnection">5</property>
+
+  </named-config>
+</c3p0-config>
